@@ -1,53 +1,47 @@
-$sequoia_red: #a70c24;
-
 #block-landing-page-block-landing-page-block-block {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 10;
+	z-index: -10;
 	background: white;
-	// opacity: 0;
-	// animation: fadeout 5s linear; /* Firefox */
- //  -webkit-animation: fadeout 5s linear; /* Chrome, Safari, Opera */
+	opacity: 0;
+	animation: fadeout 3s ease-in; /* Firefox */
+  -webkit-animation: fadeout 3s ease-in; /* Chrome, Safari, Opera */
 	.content {
-		position: relative;
+		position: fixed;
 		top: 50%;
 		left: 50%;
-		#sequoia-logo-wrapper {
-			height: 100px;
-			width: 100px;
-			.logo-1, .logo-2, .logo-3, .logo-4, .logo-5, .logo-6, .logo-7 { display: inline-block; width: 1/7*100%; height: 100%; box-sizing: content-box; }
-			.logo-2, .logo-4, .logo-6 { background: $sequoia_red; }
-		}
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
 	}
 }
 
 @keyframes fadeout {
 	   0% { opacity: 1; z-index: 10 }
-    10% { opacity: 0.9; z-index: 10 }
-    20% { opacity: 0.8; z-index: 10 }
-    30% { opacity: 0.7; z-index: 10 }
-    40% { opacity: 0.6; z-index: 10 }
-    50% { opacity: 0.5; z-index: 10 }
-    60% { opacity: 0.4; z-index: 10 }
-    70% { opacity: 0.3; z-index: 10 }
-    80% { opacity: 0.2; z-index: 10 }
-    90% { opacity: 0.1; z-index: 10 }
+    // 10% { opacity: 0.9; z-index: 10 }
+    // 20% { opacity: 0.8; z-index: 10 }
+    // 30% { opacity: 0.7; z-index: 10 }
+    // 40% { opacity: 0.6; z-index: 10 }
+    // 50% { opacity: 0.5; z-index: 10 }
+    // 60% { opacity: 0.4; z-index: 10 }
+    // 70% { opacity: 0.3; z-index: 10 }
+    // 80% { opacity: 0.2; z-index: 10 }
+    // 90% { opacity: 0.1; z-index: 10 }
     100% { opacity: 0; z-index: -10 }
 }
 
 @-webkit-keyframes fadeout {
 	   0% { opacity: 1; z-index: 10 }
-    10% { opacity: 0.9; z-index: 10 }
-    20% { opacity: 0.8; z-index: 10 }
-    30% { opacity: 0.7; z-index: 10 }
-    40% { opacity: 0.6; z-index: 10 }
-    50% { opacity: 0.5; z-index: 10 }
-    60% { opacity: 0.4; z-index: 10 }
-    70% { opacity: 0.3; z-index: 10 }
-    80% { opacity: 0.2; z-index: 10 }
-    90% { opacity: 0.1; z-index: 10 }
+    // 10% { opacity: 0.9; z-index: 10 }
+    // 20% { opacity: 0.8; z-index: 10 }
+    // 30% { opacity: 0.7; z-index: 10 }
+    // 40% { opacity: 0.6; z-index: 10 }
+    // 50% { opacity: 0.5; z-index: 10 }
+    // 60% { opacity: 0.4; z-index: 10 }
+    // 70% { opacity: 0.3; z-index: 10 }
+    // 80% { opacity: 0.2; z-index: 10 }
+    // 90% { opacity: 0.1; z-index: 10 }
     100% { opacity: 0; z-index: -10 }
 }
