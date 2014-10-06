@@ -26,7 +26,7 @@ function landing_page_block_block_info() {
 	$blocks = array();
 
 	$blocks['landing_page_block_block'] = array(
-		'info' => t('landing Page'),
+		'info' => t('Landing Page'),
 		'cache' => DRUPAL_CACHE_PER_ROLE
 	);
 	return $blocks;
