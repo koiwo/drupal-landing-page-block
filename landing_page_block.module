@@ -1,0 +1,78 @@
+<?php
+
+/**
+ * @file
+ * Provides a block that displays like a classic fullscreen landing page before it fades out
+ */
+
+// TODO set session
+
+/**
+ * Implements hook_init().
+ */
+function landing_page_block_init() {
+	if (!path_is_admin(current_path())) {
+		drupal_add_css(drupal_get_path('module', 'landing_page_block') .'/landing_page_block.css');
+	}
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function landing_page_block_block_info() {
+	$blocks = array();
+
+	$blocks['landing_page_block_block'] = array(
+		'info' => t('landing Page'),
+		'cache' => DRUPAL_CACHE_PER_ROLE
+	);
+	return $blocks;
+}
+
+/**
+ * Implements hook_block_info_alter().
+ */
+function landing_page_block_block_info_alter(&$blocks, $theme, $code_blocks) {
+	if (!path_is_admin(current_path())) {
+		if (isset($blocks['landing_page_block']['landing_page_block_block'])) {
+			$blocks['landing_page_block']['landing_page_block_block']['status'] = 1;
+			$blocks['landing_page_block']['landing_page_block_block']['region'] = 'content';
+		 	$blocks['landing_page_block']['landing_page_block_block']['weight'] = 2;
+		 	$blocks['landing_page_block']['landing_page_block_block']['visibility'] = BLOCK_VISIBILITY_NOTLISTED;
+		 	$blocks['landing_page_block']['landing_page_block_block']['pages'] = '';
+		}
+	}
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function landing_page_block_block_view($delta = '') {
+	$block = array();
+
+	switch($delta) {
+		case 'landing_page_block_block':
+		$block['subject'] = NULL;
+		$block['content'] = _landing_page_block_content();
+		break;
+	}
+	return $block;
+}
+
+/**
+ * Implements hook_form().
+ */
+function _landing_page_block_content() {
+	$content = '
+	<div id="sequoia-logo-wrapper">
+		<div class="logo-1"></div>
+		<div class="logo-2"></div>
+		<div class="logo-3"></div>
+		<div class="logo-4"></div>
+		<div class="logo-5"></div>
+		<div class="logo-6"></div>
+		<div class="logo-7"></div>
+	</div>
+	';
+	return $content;
+}

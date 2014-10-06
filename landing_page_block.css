@@ -1,0 +1,167 @@
+/* line 3, landing_page_block.scss */
+#block-landing-page-block-landing-page-block-block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: white;
+}
+/* line 14, landing_page_block.scss */
+#block-landing-page-block-landing-page-block-block .content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+/* line 18, landing_page_block.scss */
+#block-landing-page-block-landing-page-block-block .content #sequoia-logo-wrapper {
+  height: 100px;
+  width: 100px;
+}
+/* line 21, landing_page_block.scss */
+#block-landing-page-block-landing-page-block-block .content #sequoia-logo-wrapper .logo-1, #block-landing-page-block-landing-page-block-block .content #sequoia-logo-wrapper .logo-2, #block-landing-page-block-landing-page-block-block .content #sequoia-logo-wrapper .logo-3, #block-landing-page-block-landing-page-block-block .content #sequoia-logo-wrapper .logo-4, #block-landing-page-block-landing-page-block-block .content #sequoia-logo-wrapper .logo-5, #block-landing-page-block-landing-page-block-block .content #sequoia-logo-wrapper .logo-6, #block-landing-page-block-landing-page-block-block .content #sequoia-logo-wrapper .logo-7 {
+  display: inline-block;
+  width: 14.28571%;
+  height: 100%;
+  box-sizing: content-box;
+}
+/* line 22, landing_page_block.scss */
+#block-landing-page-block-landing-page-block-block .content #sequoia-logo-wrapper .logo-2, #block-landing-page-block-landing-page-block-block .content #sequoia-logo-wrapper .logo-4, #block-landing-page-block-landing-page-block-block .content #sequoia-logo-wrapper .logo-6 {
+  background: #a70c24;
+}
+
+@keyframes fadeout {
+  /* line 28, landing_page_block.scss */
+  0% {
+    opacity: 1;
+    z-index: 10;
+  }
+
+  /* line 29, landing_page_block.scss */
+  10% {
+    opacity: 0.9;
+    z-index: 10;
+  }
+
+  /* line 30, landing_page_block.scss */
+  20% {
+    opacity: 0.8;
+    z-index: 10;
+  }
+
+  /* line 31, landing_page_block.scss */
+  30% {
+    opacity: 0.7;
+    z-index: 10;
+  }
+
+  /* line 32, landing_page_block.scss */
+  40% {
+    opacity: 0.6;
+    z-index: 10;
+  }
+
+  /* line 33, landing_page_block.scss */
+  50% {
+    opacity: 0.5;
+    z-index: 10;
+  }
+
+  /* line 34, landing_page_block.scss */
+  60% {
+    opacity: 0.4;
+    z-index: 10;
+  }
+
+  /* line 35, landing_page_block.scss */
+  70% {
+    opacity: 0.3;
+    z-index: 10;
+  }
+
+  /* line 36, landing_page_block.scss */
+  80% {
+    opacity: 0.2;
+    z-index: 10;
+  }
+
+  /* line 37, landing_page_block.scss */
+  90% {
+    opacity: 0.1;
+    z-index: 10;
+  }
+
+  /* line 38, landing_page_block.scss */
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@-webkit-keyframes fadeout {
+  /* line 42, landing_page_block.scss */
+  0% {
+    opacity: 1;
+    z-index: 10;
+  }
+
+  /* line 43, landing_page_block.scss */
+  10% {
+    opacity: 0.9;
+    z-index: 10;
+  }
+
+  /* line 44, landing_page_block.scss */
+  20% {
+    opacity: 0.8;
+    z-index: 10;
+  }
+
+  /* line 45, landing_page_block.scss */
+  30% {
+    opacity: 0.7;
+    z-index: 10;
+  }
+
+  /* line 46, landing_page_block.scss */
+  40% {
+    opacity: 0.6;
+    z-index: 10;
+  }
+
+  /* line 47, landing_page_block.scss */
+  50% {
+    opacity: 0.5;
+    z-index: 10;
+  }
+
+  /* line 48, landing_page_block.scss */
+  60% {
+    opacity: 0.4;
+    z-index: 10;
+  }
+
+  /* line 49, landing_page_block.scss */
+  70% {
+    opacity: 0.3;
+    z-index: 10;
+  }
+
+  /* line 50, landing_page_block.scss */
+  80% {
+    opacity: 0.2;
+    z-index: 10;
+  }
+
+  /* line 51, landing_page_block.scss */
+  90% {
+    opacity: 0.1;
+    z-index: 10;
+  }
+
+  /* line 52, landing_page_block.scss */
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}

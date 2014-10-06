@@ -1,0 +1,4 @@
+name = Landing Page Block
+description = Provides a block that display like a classic fullscreen landing page before it fades out
+package = Custom
+core = 7.x
