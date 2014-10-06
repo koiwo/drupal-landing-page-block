@@ -63,15 +63,21 @@ function landing_page_block_block_view($delta = '') {
  * Implements hook_form().
  */
 function _landing_page_block_content() {
+	$site_name = variable_get('site_name');
+	$site_slogan = variable_get('site_slogan');
 	$content = '
-	<div id="sequoia-logo-wrapper">
-		<div class="logo-1"></div>
-		<div class="logo-2"></div>
-		<div class="logo-3"></div>
-		<div class="logo-4"></div>
-		<div class="logo-5"></div>
-		<div class="logo-6"></div>
-		<div class="logo-7"></div>
+	<div class="sequoia-wrapper">
+		<div id="sequoia-logo-wrapper">
+			<div class="logo-1"></div>
+			<div class="logo-2"></div>
+			<div class="logo-3"></div>
+			<div class="logo-4"></div>
+			<div class="logo-5"></div>
+			<div class="logo-6"></div>
+			<div class="logo-7"></div>
+		</div>
+		<div class="site-name">' . $site_name . '</div>
+		<div class="site-slogan">' . $site_slogan . '</diV>
 	</div>
 	';
 	return $content;
