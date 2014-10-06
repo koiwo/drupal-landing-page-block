@@ -69,8 +69,8 @@ function _landing_page_block_content() {
 	$site_name = variable_get('site_name');
 	$site_slogan = variable_get('site_slogan');
 	$content = '
-	<div class="sequoia-wrapper">
-		<div id="sequoia-logo-wrapper">
+	<div class="logo-wrapper">
+		<div id="logo">
 			<div class="logo-1"></div>
 			<div class="logo-2"></div>
 			<div class="logo-3"></div>
