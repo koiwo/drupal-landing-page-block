@@ -11,12 +11,12 @@
  * Implements hook_init().
  */
 function landing_page_block_init() {
-	if (!path_is_admin(current_path()) && !isset($_SESSION['landing_page'])) {
+	if (!path_is_admin(current_path()) /*&& !isset($_SESSION['landing_page'])*/) {
 		drupal_add_css(drupal_get_path('module', 'landing_page_block') .'/landing_page_block.css');
 		$_SESSION['landing_page'] = TRUE;
-	} elseif (!path_is_admin(current_path()) && isset($_SESSION['landing_page'])) {
+	} /*elseif (!path_is_admin(current_path()) && isset($_SESSION['landing_page'])) {
 		drupal_add_css(drupal_get_path('module', 'landing_page_block') .'/session.css');
-	}
+	}*/
 }
 
 /**
