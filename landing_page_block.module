@@ -42,7 +42,7 @@ function landing_page_block_block_info_alter(&$blocks, $theme, $code_blocks) {
 			$blocks['landing_page_block']['landing_page_block_block']['region'] = 'content';
 		 	$blocks['landing_page_block']['landing_page_block_block']['weight'] = 2;
 		 	$blocks['landing_page_block']['landing_page_block_block']['visibility'] = BLOCK_VISIBILITY_LISTED;
-		 	$blocks['landing_page_block']['landing_page_block_block']['pages'] = 'startseite';
+		 	$blocks['landing_page_block']['landing_page_block_block']['pages'] = '<front>';
 		}
 	}
 }
