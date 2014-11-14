@@ -8,9 +8,9 @@
   z-index: -10;
   background: white;
   opacity: 0;
-  animation: fadeout 10s ease-in;
+  animation: fadeout 4s cubic-bezier(0.755, 0.05, 0.855, 0.06);
   /* Firefox */
-  -webkit-animation: fadeout 10s ease-in;
+  -webkit-animation: fadeout 4s cubic-bezier(0.755, 0.05, 0.855, 0.06);
   /* Chrome, Safari, Opera */
 }
 /* line 12, landing_page_block.scss */

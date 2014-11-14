@@ -7,8 +7,8 @@
 	z-index: -10;
 	background: white;
 	opacity: 0;
-	animation: fadeout 10s ease-in; /* Firefox */
-  -webkit-animation: fadeout 10s ease-in; /* Chrome, Safari, Opera */
+	animation: fadeout 4s cubic-bezier(0.755, 0.050, 0.855, 0.060); /* Firefox */
+  -webkit-animation: fadeout 4s cubic-bezier(0.755, 0.050, 0.855, 0.060); /* Chrome, Safari, Opera */
 	.content {
 		position: fixed;
 		top: 50%;
