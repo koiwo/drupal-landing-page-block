@@ -1,4 +1,4 @@
-/* line 1, landing_page_block.scss */
+/* line 3, landing_page_block.scss */
 #block-landing-page-block-landing-page-block-block {
   position: fixed;
   top: 0;
@@ -6,14 +6,14 @@
   width: 100%;
   height: 100%;
   z-index: -10;
-  background: white;
+  background: #fef9eb;
   opacity: 0;
   animation: fadeout 4s cubic-bezier(0.755, 0.05, 0.855, 0.06);
   /* Firefox */
   -webkit-animation: fadeout 4s cubic-bezier(0.755, 0.05, 0.855, 0.06);
   /* Chrome, Safari, Opera */
 }
-/* line 12, landing_page_block.scss */
+/* line 14, landing_page_block.scss */
 #block-landing-page-block-landing-page-block-block .content {
   position: fixed;
   top: 50%;
@@ -23,26 +23,26 @@
 }
 
 @keyframes fadeout {
-  /* line 22, landing_page_block.scss */
+  /* line 24, landing_page_block.scss */
   0% {
     opacity: 1;
     z-index: 999999;
   }
 
-  /* line 32, landing_page_block.scss */
+  /* line 25, landing_page_block.scss */
   100% {
     opacity: 0;
     z-index: -1;
   }
 }
 @-webkit-keyframes fadeout {
-  /* line 36, landing_page_block.scss */
+  /* line 29, landing_page_block.scss */
   0% {
     opacity: 1;
     z-index: 999999;
   }
 
-  /* line 46, landing_page_block.scss */
+  /* line 30, landing_page_block.scss */
   100% {
     opacity: 0;
     z-index: -1;

@@ -1,3 +1,5 @@
+$sequoia_body_bg: rgba(254, 249, 235, 1);
+
 #block-landing-page-block-landing-page-block-block {
 	position: fixed;
 	top: 0;
@@ -5,7 +7,7 @@
 	width: 100%;
 	height: 100%;
 	z-index: -10;
-	background: white;
+	background: $sequoia_body_bg;
 	opacity: 0;
 	animation: fadeout 4s cubic-bezier(0.755, 0.050, 0.855, 0.060); /* Firefox */
   -webkit-animation: fadeout 4s cubic-bezier(0.755, 0.050, 0.855, 0.060); /* Chrome, Safari, Opera */
@@ -19,29 +21,11 @@
 }
 
 @keyframes fadeout {
-	   0% { opacity: 1; z-index: 999999 }
-    // 10% { opacity: 0.9; z-index: 10 }
-    // 20% { opacity: 0.8; z-index: 10 }
-    // 30% { opacity: 0.7; z-index: 10 }
-    // 40% { opacity: 0.6; z-index: 10 }
-    // 50% { opacity: 0.5; z-index: 10 }
-    // 60% { opacity: 0.4; z-index: 10 }
-    // 70% { opacity: 0.3; z-index: 10 }
-    // 80% { opacity: 0.2; z-index: 10 }
-    // 90% { opacity: 0.1; z-index: 10 }
+      0% { opacity: 1; z-index: 999999 }
     100% { opacity: 0; z-index: -1 }
 }
 
 @-webkit-keyframes fadeout {
-	   0% { opacity: 1; z-index: 999999 }
-    // 10% { opacity: 0.9; z-index: 10 }
-    // 20% { opacity: 0.8; z-index: 10 }
-    // 30% { opacity: 0.7; z-index: 10 }
-    // 40% { opacity: 0.6; z-index: 10 }
-    // 50% { opacity: 0.5; z-index: 10 }
-    // 60% { opacity: 0.4; z-index: 10 }
-    // 70% { opacity: 0.3; z-index: 10 }
-    // 80% { opacity: 0.2; z-index: 10 }
-    // 90% { opacity: 0.1; z-index: 10 }
+      0% { opacity: 1; z-index: 999999 }
     100% { opacity: 0; z-index: -1 }
 }
